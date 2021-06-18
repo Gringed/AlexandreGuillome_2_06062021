@@ -187,7 +187,7 @@ header
 .bloc_hebergements
 {
     background: #F2F2F2;
-    padding: 10px 30px 0 30px;
+    padding: 10px 30px 30px 30px;
     border-radius: 2%;
     width: 60%;
     margin-right: 2%;
@@ -221,6 +221,11 @@ header
     border-radius: 20px;
     margin-right: 3%;
     margin-bottom: inherit;
+    box-shadow: rgba(0, 0, 0, 0.082) 0 5px 5px 5px;
+}
+.bloc_hebergements .content_elements .elements:hover
+{
+    box-shadow: #0065fc 0 10px 5px 0px;
 }
 .bloc_hebergements .content_elements .elements a
 {
@@ -279,6 +284,11 @@ header
     border-radius: 20px;
     margin-bottom: 5%;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.082) 0 5px 5px 5px;
+}
+.bloc_populaires .content_elements .elements:hover
+{
+    box-shadow: #0065fc 0 10px 5px 0px;
 }
 .bloc_populaires .content_elements .elements a
 {
@@ -327,14 +337,7 @@ header
     color: #F2F2F2;
     font-size: 13px;
 }
-.elements
-{
-    box-shadow: rgba(0, 0, 0, 0.082) 0 5px 5px 5px;
-}
-.elements:hover
-{
-    box-shadow: #0065fc 0 10px 5px 0px;
-}
+
 .price
 {
     font-weight: 900;
@@ -347,9 +350,100 @@ header
 
 
 /* Section activités */
+#activity
+{
+    display: flex;
+}
+.bloc_activity
+{
 
+    border-radius: 2%;
+    width: 100%;
+    margin-bottom: auto;
+}
+.bloc_activity h3
+{
+    display: flex;
+}
+.bloc_activity .content_elements
+{
+    margin-bottom: 5%;
+    display: flex;
+}
+.bloc_activity .content_elements .elements
+{
+    width: 40%;
+    height: fit-content;
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-bottom: inherit;
+}
+.bloc_activity .content_elements .elements .cadre_photo_small1
+{
+    margin-bottom: 20%;
+}
+.bloc_activity .content_elements .elements a
+{
+    text-decoration: none;
+    color: black;
+}
+.bloc_activity .content_elements .elements a .cadre_photo, .cadre_photo_small1, .cadre_photo_small2
+{
+    overflow : hidden;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.082) 0 5px 5px 5px;
+}
+.bloc_activity .content_elements .elements a .cadre_photo:hover, .cadre_photo_small1:hover, .cadre_photo_small2:hover
+{
+    box-shadow: #0065fc 0 10px 5px 0px;
+}
+.bloc_activity .content_elements .elements a .cadre_photo img
+{ 
+    object-fit: cover;
+    height: 420px;
+}
+.bloc_activity .content_elements .elements a .cadre_photo_small1 img
+{
+    object-fit: cover;
+    height: 212px;
+    width: fit-content;
+}
+.bloc_activity .content_elements .elements a .cadre_photo_small2 img
+{
+    object-fit: cover;
+    height: 90px;
+    width: fit-content;
+}
+.bloc_activity .content_elements .elements p
+{
+    display: flex;
+    font-weight: bold;
+    padding: 5px 6px 2px 6px;
+    font-size: 17px;
+}
 
-
+/* Footer */
+footer
+{
+    display: flex;
+    background: #F2F2F2;
+    padding: 2% 0 2% 0;
+    margin-bottom: -10px;
+}
+footer .lg-4 li
+{
+    list-style: none;
+    padding-bottom: 1%;
+}
+footer .lg-4 li a
+{
+    text-decoration: none;
+    color: black;
+}
+footer .lg-4 li a:hover
+{
+    color: #0065FC;
+}
 
 @media (min-width:576px)
 {
