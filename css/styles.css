@@ -193,6 +193,18 @@ header
     margin-right: 2%;
     margin-bottom: auto;
 }
+.bloc_hebergements h4
+{
+    display: flex;
+    margin-top: -5%;
+    padding: 5px;
+}
+.bloc_hebergements h4 a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 .bloc_hebergements .content_elements
 {
     margin-bottom: 5%;
@@ -218,7 +230,7 @@ header
 .bloc_hebergements .content_elements .elements a .cadre_photo
 {
     overflow : hidden;
-    height: 85%;
+    height: 108px;
     border-radius: 20px 20px 0 0;
 }
 .bloc_hebergements .content_elements .elements a .cadre_photo img
@@ -231,7 +243,7 @@ header
 {
     display: flex;
     margin: auto;
-    padding: 2px 6px 2px 6px;
+    padding: 5px 6px 2px 6px;
     font-size: 13px;
 }
 .bloc_hebergements .content_elements .elements .notes
@@ -278,9 +290,9 @@ header
 {
     overflow : hidden;
     display : flex; 
-    width : 290px; 
-    height : 142px;
-    border-radius: 20px;
+    width : 210px; 
+    height : 136px;
+    border-radius: 20px 0 0 20px;
 }
 .bloc_populaires .content_elements .elements a .float_right h3
 {
@@ -297,7 +309,7 @@ header
 .bloc_populaires .content_elements .elements a .cadre_photo img
 { 
      position : relative;
-     left : -17px; 
+     left : -9px; 
      top : 0;
      object-fit: cover;
 }
@@ -315,17 +327,26 @@ header
     color: #F2F2F2;
     font-size: 13px;
 }
+.elements
+{
+    box-shadow: rgba(0, 0, 0, 0.082) 0 5px 5px 5px;
+}
+.elements:hover
+{
+    box-shadow: #0065fc 0 10px 5px 0px;
+}
 .price
 {
     font-weight: 900;
     padding-left: 4px;
 }
-
 .notes .star-blue
 {
     color: #0065FC;
 }
 
+
+/* Section activités */
 
 
 
