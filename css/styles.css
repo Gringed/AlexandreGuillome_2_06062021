@@ -5,6 +5,7 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    font-size: xxx-large; 
 }
 .img-responsive
 {
@@ -24,17 +25,36 @@ body
 /* Header */
 header
 {
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: center;
 }
-.logo, .nav
+.logo
 {
     width: 50%;
 }
+.nav
+{
+    width: 100%;
+}
+.nav .liens
+{
+    display: flex;
+    justify-content: space-around;
+}
+.nav .liens .element
+{
+    position: absolute;
+    left: 90%;
+    top: 6%;
+}
+.nav .liens .responsive
+{
+    margin: 0 23% 0 23%;
+}
 .logo img
 {
-    width: 15%;
+    width: 100%;
 }
 .nav ul
 {
@@ -124,7 +144,7 @@ header
 .filters ul 
 {
     display: flex;
-    width: 55%;
+    width: 56%;
     justify-content: space-between;
     list-style-type: none;
 }
@@ -445,6 +465,9 @@ footer .lg-4 li a:hover
     color: #0065FC;
 }
 
+
+/* Responsive Media Queries */
+
 @media (min-width:576px)
 {
     .container
@@ -456,14 +479,42 @@ footer .lg-4 li a:hover
 {
     .container
     {
-        max-width:720px;
+        max-width:900px;
     }
 }
 @media (min-width:992px)
 {
+    body
+    {
+        font-size: medium;
+    }
     .container
     {
         max-width:960px;
+    }
+    .logo img
+    {
+        width: 15%;
+    }
+    header
+    {
+        display: flex;
+    }
+    .nav
+    {
+        width: 50%;
+    }
+    .nav .liens
+    {
+        justify-content: flex-end;
+    }
+    .nav .liens .element
+    {
+        position: initial;
+    }
+    .nav .liens .responsive
+    {
+        margin: 0;
     }
 }@media (min-width:1200px)
 {
@@ -471,63 +522,12 @@ footer .lg-4 li a:hover
     {
         max-width:1140px;
     }
-}
-@media (min-width:1400px)
+}@media (min-width:1400px)
 {
     .container
     {
         max-width:1320px;
     }
 }
-.col-lg-auto
-{
-    flex:0 0 auto;width:auto;
-}
-.col-lg-1
-{
-    flex:0 0 auto;width:8.3333333333%;
-}
-.col-lg-2
-{
-    flex:0 0 auto;width:16.6666666667%;
-}
-.col-lg-3
-{
-    flex:0 0 auto;width:25%;
-}
-.col-lg-4
-{
-    flex:0 0 auto;width:33.3333333333%;
-}
-.col-lg-5
-{
-    flex:0 0 auto;width:41.6666666667%;
-}
-.col-lg-6
-{
-    flex:0 0 auto;width:50%;
-}
-.col-lg-7
-{
-    flex:0 0 auto;width:58.3333333333%;
-}
-.col-lg-8
-{
-    flex:0 0 auto;width:66.6666666667%;
-}
-.col-lg-9
-{
-    flex:0 0 auto;width:75%;
-}
-.col-lg-10
-{
-    flex:0 0 auto;width:83.3333333333%;
-}
-.col-lg-11
-{
-    flex:0 0 auto;width:91.6666666667%;
-}
-.col-lg-12
-{
-    flex:0 0 auto;width:100%;
-}
+
+
