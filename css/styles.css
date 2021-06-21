@@ -31,7 +31,7 @@ header
 }
 .logo
 {
-    width: 50%;
+    width: 35%;
 }
 .nav
 {
@@ -45,12 +45,12 @@ header
 .nav .liens .element
 {
     position: absolute;
-    left: 90%;
-    top: 6%;
+    left: 62%;
+    top: 4%;
 }
 .nav .liens .responsive
 {
-    margin: 0 23% 0 23%;
+    margin: 0 25% 0 -10%;
 }
 .logo img
 {
@@ -91,15 +91,16 @@ header
     margin: 0;
     font-weight:bold;
     color: black;
+    font-size: 1.3em;
 }
 .descrip
 {
-    margin: 0 0 1em 0;
-    font-size: 15px;
+    margin: 4% 0 4% 0;
+    font-size: 20px;
 }
 .lg-4
 {
-    width: 40%;
+    width: 100%;
 }
 .input-group {
     position: relative;
@@ -107,21 +108,23 @@ header
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
+    padding: 7% 0 2% 0;
 }
 .input-group-text {
     
     align-items: center;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 10px 0 0 10px;
+    padding: 40px;
+    font-size: 1em;
+    border-radius: 30px 0 0 30px;
     color: black;
     background-color: #F2F2F2;
 }
 .form-control
 {
-    padding: 10px;
+    padding: 40px;
     font-weight: 800;
     border: 1px solid #f1f1f1;
+    font-size: 0.8em;
 }
 .send_search
 {
@@ -130,23 +133,29 @@ header
     border: none;
     border-radius: 0 10px 10px 0;
     padding: 14px;
+    display: none;
 }
-.filters
+.input-group .responsive
 {
-    display: flex;
+    display: inline-block;
+    font-size: xx-large;
+    padding: 5%;
+    border-radius: 30px;
 }
 .filters p
 {
-    display: flex;
     align-items: center;
     font-weight: 800;
 }
 .filters ul 
 {
     display: flex;
-    width: 56%;
+    width: auto;
     justify-content: space-between;
     list-style-type: none;
+    flex-wrap: wrap;
+    padding: initial;
+    font-size: larger;
 }
 .filters ul li 
 {
@@ -202,15 +211,16 @@ header
 /* Section Hébergements */
 #hebergements
 {
-    display: flex;
+    display: inline-grid;
+    width: 100%;
 }
 .bloc_hebergements
 {
     background: #F2F2F2;
     padding: 10px 30px 30px 30px;
     border-radius: 2%;
-    width: 60%;
-    margin-right: 2%;
+    order: 1;
+    flex-wrap: wrap;
     margin-bottom: auto;
 }
 .bloc_hebergements h4
@@ -475,6 +485,9 @@ footer .lg-4 li a:hover
         max-width:540px;
     }
 }
+
+/* Affichage tablette */
+
 @media (min-width:768px)
 {
     .container
@@ -482,6 +495,9 @@ footer .lg-4 li a:hover
         max-width:900px;
     }
 }
+
+/* Affichage Ordinateur */
+
 @media (min-width:992px)
 {
     body
@@ -491,6 +507,10 @@ footer .lg-4 li a:hover
     .container
     {
         max-width:960px;
+    }
+    .logo
+    {
+        width: 50%;
     }
     .logo img
     {
@@ -515,6 +535,59 @@ footer .lg-4 li a:hover
     .nav .liens .responsive
     {
         margin: 0;
+    }
+    .descrip
+    {
+        margin: 0 0 1em 0;
+        font-size: 15px;
+    }
+    .lg-4
+    {
+        width: 40%;
+    }
+    .input-group
+    {
+        padding: unset;
+    }
+    .input-group-text
+    {
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 10px 0 0 10px;
+    }
+    .form-control
+    {
+        padding: 10px;
+    }
+    .send_search
+    {
+        display: block;
+    }
+    .input-group .responsive
+    {
+        display: none;
+    }
+    .filters, .filters p
+    {
+        display: flex;
+    }
+    .filters ul
+    {
+        width: 57%;
+        padding: revert;
+        font-size: unset;
+    }
+    #hebergements
+    {
+        display: flex;
+        width: unset;
+    }
+    .bloc_hebergements
+    {
+        width: 60%;
+        order: unset;
+        flex-wrap: unset;
+        margin-right: 2%;
     }
 }@media (min-width:1200px)
 {
