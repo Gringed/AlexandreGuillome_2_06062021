@@ -163,6 +163,8 @@ header
 }
 .filters ul li 
 {
+    color: black;
+    font-weight: 800;
     padding: 10px 12px 10px 20px;
     border: #dbdbdb 2px solid;
     border-radius: 50px;
@@ -171,16 +173,11 @@ header
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
 }
-.filters ul a
-{
-    text-decoration: none;
-    color: black;
-    font-weight: 800;
-}
 .filters ul li:hover
 {
     background: #0065FC;
     color: white;
+    cursor: pointer;
     border: #DEEBFF solid 2px;
     transition-duration: 0.3s;
     transition-delay: 0.1s;
@@ -250,7 +247,6 @@ header
     background: white;
     padding: 10px;
     border-radius: 20px;
-    margin-right: 3%;
     margin-bottom: inherit;
     box-shadow: rgba(0, 0, 0, 0.082) 0 5px 5px 5px;
 }
@@ -390,7 +386,6 @@ header
 }
 .bloc_activity
 {
-
     border-radius: 2%;
     width: 100%;
     margin-bottom: auto;
@@ -402,19 +397,15 @@ header
 .bloc_activity .content_elements
 {
     margin-bottom: 5%;
-    display: flex;
 }
 .bloc_activity .content_elements .elements
 {
-    width: 40%;
-    height: fit-content;
     border-radius: 20px;
-    margin-right: 3%;
     margin-bottom: inherit;
 }
 .bloc_activity .content_elements .elements .cadre_photo_small1
 {
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 .bloc_activity .content_elements .elements a
 {
@@ -431,35 +422,24 @@ header
 {
     box-shadow: #0065fc 0 10px 5px 0px;
 }
-.bloc_activity .content_elements .elements a .cadre_photo img
+.bloc_activity .content_elements .elements a img
 { 
     object-fit: cover;
-    height: 420px;
+    height: 280px;
+    width: 100%;
 }
-.bloc_activity .content_elements .elements a .cadre_photo_small1 img
-{
-    object-fit: cover;
-    height: 212px;
-    width: fit-content;
-}
-.bloc_activity .content_elements .elements a .cadre_photo_small2 img
-{
-    object-fit: cover;
-    height: 90px;
-    width: fit-content;
-}
+
 .bloc_activity .content_elements .elements p
 {
     display: flex;
     font-weight: bold;
-    padding: 5px 6px 2px 6px;
-    font-size: 17px;
+    padding: 0 10px 2px 5%;
+    font-size: 0.8em;
 }
 
 /* Footer */
 footer
 {
-    display: flex;
     background: #F2F2F2;
     padding: 2% 0 2% 0;
     margin-bottom: -10px;
@@ -478,7 +458,12 @@ footer .lg-4 li a:hover
 {
     color: #0065FC;
 }
-
+footer .lg-4
+{
+    width: 100%;
+    padding: 2%;
+    font-size: large;
+}
 
 /* Responsive Media Queries */
 
@@ -637,6 +622,7 @@ footer .lg-4 li a:hover
     {
         width: 29%;
         padding: 5px;
+        margin-right: 3%;
     }
     .bloc_hebergements .content_elements .elements a .cadre_photo
     {
@@ -681,6 +667,51 @@ footer .lg-4 li a:hover
     .bloc_populaires .content_elements .elements a .float_right p, .bloc_populaires .content_elements .elements a .float_right .notes
     {
         font-size: 13px;
+    }
+    .bloc_activity .content_elements
+    {
+        display: flex;
+    }
+    .bloc_activity .content_elements .elements
+    {
+        width: 40%;
+        height: fit-content;
+        margin-right: 4%;
+    }
+    .bloc_activity .content_elements .elements a .cadre_photo img
+    { 
+        object-fit: cover;
+        height: 420px;
+    }
+    .bloc_activity .content_elements .elements a .cadre_photo_small1 img
+    {
+        object-fit: cover;
+        height: 212px;
+        width: fit-content;
+    }
+    .bloc_activity .content_elements .elements a .cadre_photo_small2 img
+    {
+        object-fit: cover;
+        height: 90px;
+        width: fit-content;
+    }
+    .bloc_activity .content_elements .elements .cadre_photo_small1
+    {
+        margin-bottom: 20%;
+    }
+    .bloc_activity .content_elements .elements p
+    {
+        padding: 5px 6px 2px 6px;
+        font-size: 17px;
+    }
+    footer
+    {
+        display: flex;
+    }
+    footer .lg-4
+    {
+        padding: unset;
+        font-size: unset;
     }
 }@media (min-width:1200px)
 {
