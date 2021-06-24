@@ -444,6 +444,10 @@ footer
     padding: 2% 0 2% 0;
     margin-bottom: -10px;
 }
+footer .lg-4 ul
+{
+    padding: 0;
+}
 footer .lg-4 li
 {
     list-style: none;
@@ -451,6 +455,8 @@ footer .lg-4 li
 }
 footer .lg-4 li a
 {
+    list-style: none;
+    padding-bottom: 1%;
     text-decoration: none;
     color: black;
 }
@@ -575,7 +581,7 @@ footer .lg-4
     }
     .filters ul
     {
-        width: 57%;
+        width: 70%;
         padding: revert;
         font-size: unset;
     }
@@ -620,7 +626,7 @@ footer .lg-4
     }
     .bloc_hebergements .content_elements .elements
     {
-        width: 29%;
+        width: 45%;
         padding: 5px;
         margin-right: 3%;
     }
@@ -671,6 +677,7 @@ footer .lg-4
     .bloc_activity .content_elements
     {
         display: flex;
+        width: 104%;
     }
     .bloc_activity .content_elements .elements
     {
@@ -719,11 +726,24 @@ footer .lg-4
     {
         max-width:1140px;
     }
+    
 }@media (min-width:1400px)
 {
     .container
     {
         max-width:1320px;
+    }
+    .bloc_hebergements .content_elements .elements
+    {
+        width: 29%;
+        padding: 5px;
+        margin-right: 3%;
+    }
+    .filters ul
+    {
+        width: 57%;
+        padding: revert;
+        font-size: unset;
     }
 }
 
