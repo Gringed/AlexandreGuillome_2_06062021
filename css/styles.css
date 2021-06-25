@@ -252,7 +252,7 @@ header
 }
 .bloc_hebergements .content_elements .elements:hover
 {
-    box-shadow: #0065fc 0 10px 5px 0px;
+    box-shadow: #808080 0px 1px 10px 7px;
 }
 .bloc_hebergements .content_elements .elements a
 {
@@ -316,7 +316,7 @@ header
 }
 .bloc_populaires .content_elements .elements:hover
 {
-    box-shadow: #0065fc 0 10px 5px 0px;
+    box-shadow: #808080 0px 1px 10px 7px;
 }
 .bloc_populaires .content_elements .elements a
 {
@@ -420,7 +420,7 @@ header
 }
 .bloc_activity .content_elements .elements a .cadre_photo:hover, .cadre_photo_small1:hover, .cadre_photo_small2:hover
 {
-    box-shadow: #0065fc 0 10px 5px 0px;
+    box-shadow: #808080 0px 1px 10px 7px;
 }
 .bloc_activity .content_elements .elements a img
 { 
