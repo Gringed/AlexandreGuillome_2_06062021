@@ -5,7 +5,7 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    font-size: xxx-large; 
+    font-size: 3rem; 
 }
 .img-responsive
 {
@@ -582,7 +582,7 @@ footer .lg-4
     .filters ul
     {
         width: 70%;
-        padding: revert;
+        padding-left: 3%;
         font-size: unset;
     }
     .filters ul li 
@@ -742,7 +742,7 @@ footer .lg-4
     .filters ul
     {
         width: 57%;
-        padding: revert;
+        padding-left: 3%;
         font-size: unset;
     }
 }
