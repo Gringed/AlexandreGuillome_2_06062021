@@ -83,6 +83,10 @@ header
 {
     color: #0065FC;
 }
+.nav li .join a:hover
+{
+    border: none;
+}
 .nav li a:hover, .nav li a:active
 {
     border-bottom: 5px #0065FC solid ;
@@ -262,7 +266,7 @@ header
 .bloc_hebergements .content_elements .elements a .cadre_photo
 {
     overflow : hidden;
-    height: 300px;
+
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
@@ -329,7 +333,7 @@ header
     overflow : hidden;
     display : flex; 
     width : 60%; 
-    height : 330px;
+    height : 175px;
     border-radius: 20px 0 0 20px;
 }
 .bloc_populaires .content_elements .elements a .float_right
@@ -472,12 +476,64 @@ footer .lg-4
 }
 
 /* Responsive Media Queries */
-
+@media (max-width:576px)
+{
+    body
+    {
+        font-size: 1rem;
+    }
+    .input-group
+    {
+        flex-wrap: nowrap;
+    }
+    .input-group-text
+    {
+        padding: 20px;
+        border-radius: 20px 0 0 20px;
+    }
+    .form-control
+    {
+        padding: 15px;
+    }
+    .input-group .responsive
+    {
+        font-size: small;
+        padding: 20px;
+        border-radius: 0 20px 20px 0;
+    }
+}
 @media (min-width:576px)
 {
+    body
+    {
+        font-size: large;
+    }
     .container
     {
-        max-width:540px;
+        max-width:695px;
+    }
+    .logo img
+    {
+        width: 70%;
+    }
+    .input-group
+    {
+        flex-wrap: nowrap;
+    }
+    .input-group-text
+    {
+        padding: 20px;
+        border-radius: 20px 0 0 20px;
+    }
+    .form-control
+    {
+        padding: 15px;
+    }
+    .input-group .responsive
+    {
+        font-size: small;
+        padding: 20px;
+        border-radius: 0 20px 20px 0;
     }
 }
 
@@ -485,12 +541,23 @@ footer .lg-4
 
 @media (min-width:768px)
 {
+    body
+    {
+        font-size: 2rem;
+    }
     .container
     {
         max-width:900px;
     }
+    .bloc_populaires .content_elements .elements a .cadre_photo
+{ 
+    height : 235px;
 }
-
+}
+@media (max-width:768px)
+{
+    
+}
 /* Affichage Ordinateur */
 
 @media (min-width:992px)
